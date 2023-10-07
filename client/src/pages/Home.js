@@ -2,6 +2,7 @@ import BigDog from "../assets/images/robot-dog-airplane.png";
 // import ScheduleCarousel from "./components/ScheduleCarousel/index";
 import ScheduleCarousel from "../components/ScheduleCarousel/index";
 // import { Link } from 'react-router-dom';
+import MapComponent from "../components/MapComponent/index";
 
 const events = [
   {
@@ -134,6 +135,10 @@ const Home = () => {
       </div>
       <div>
         <img className="home-img" src={BigDog} alt="Big Dog" />
+      </div>
+      <div>
+        <h1>Interactive Map</h1>
+        <MapComponent />
       </div>
     </div>
   );

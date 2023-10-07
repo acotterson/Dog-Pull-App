@@ -1,0 +1,36 @@
+.map-container {
+  width: 100%; /* Adjust as per your requirements */
+  height: auto;
+  border: 1px solid #D32F2F; /* Optional: Just to visualize the SVG boundary */
+}
+
+.responsiveSVG {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+}
+
+/* Using the SVG structure you provided for hover effect */
+/* This will make regions scale up a bit, giving a pop-out effect, and change color on hover */
+.map-container #region1:hover,
+.map-container #region2:hover,
+.map-container #region3:hover,
+.map-container #region4:hover,
+.map-container #region5:hover,
+.map-container #region6:hover,
+.map-container #region7:hover,
+.map-container #region8:hover,
+.map-container #region9:hover,
+.map-container #region10:hover,
+.map-container #region11:hover,
+.map-container #region12:hover,
+.map-container #region13:hover,
+.map-container #region14:hover,
+.map-container #region15:hover,
+.map-container #region16:hover,
+.map-container #region17:hover,
+.map-container #region18:hover {
+  /* transform: scale(1.0); */
+  fill: #f7dc6f; /* Highlight color, adjust as per your liking */
+  cursor: pointer;
+}
