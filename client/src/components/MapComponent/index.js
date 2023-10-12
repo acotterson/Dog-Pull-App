@@ -1,7 +1,9 @@
 import React from "react";
+import Pin from "./LocationPin/index";
+import { getCoordinatesForLocation } from "../../utils/locationCoordinates";
 import "./style.css";
 
-function MapComponent() {
+function MapComponent({ events }) {
   return (
     <div className="map-container">
       <svg
@@ -571,6 +573,10 @@ function MapComponent() {
             </g>
           </g>
         </g>
+        {events.map((event) => {
+          const coords = getCoordinatesForLocation(event);
+          return <Pin key={event.id} x={coords.x} y={coords.y} event={event} />;
+        })}
       </svg>
     </div>
   );

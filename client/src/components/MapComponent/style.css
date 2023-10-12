@@ -10,27 +10,28 @@
     max-height: 100vh;
 }
 
-/* Using the SVG structure you provided for hover effect */
-/* This will make regions scale up a bit, giving a pop-out effect, and change color on hover */
-.map-container #region1:hover,
-.map-container #region2:hover,
-.map-container #region3:hover,
-.map-container #region4:hover,
-.map-container #region5:hover,
-.map-container #region6:hover,
-.map-container #region7:hover,
-.map-container #region8:hover,
-.map-container #region9:hover,
-.map-container #region10:hover,
-.map-container #region11:hover,
-.map-container #region12:hover,
-.map-container #region13:hover,
-.map-container #region14:hover,
-.map-container #region15:hover,
-.map-container #region16:hover,
-.map-container #region17:hover,
-.map-container #region18:hover {
-  /* transform: scale(1.0); */
-  fill: #f7dc6f; /* Highlight color, adjust as per your liking */
+.map-container #region1 { fill: #6baed6; }  /* Light Blue */
+.map-container #region2 { fill: #9ecae1; }  /* Soft Blue */
+.map-container #region3 { fill: #74c476; }  /* Light Green */
+.map-container #region4 { fill: #a1d99b; }  /* Soft Green */
+.map-container #region5 { fill: #e6550d; }  /* Strong Orange */
+.map-container #region6 { fill: #fd8d3c; }  /* Soft Orange */
+.map-container #region7 { fill: #756bb1; }  /* Light Purple */
+.map-container #region8 { fill: #9e9ac8; }  /* Soft Purple */
+.map-container #region9 { fill: #b5cf6b; }  /* Olive Green */
+.map-container #region10 { fill: #d9f0a3; } /* Light Olive */
+.map-container #region11 { fill: #fdae6b; } /* Peach Orange */
+.map-container #region12 { fill: #fdd0a2; } /* Light Peach */
+.map-container #region13 { fill: #807dba; } /* Lavender */
+.map-container #region14 { fill: #bcbddc; } /* Light Lavender */
+.map-container #region15 { fill: #d73027; } /* Strong Red */
+.map-container #region16 { fill: #fc9272; } /* Soft Red */
+.map-container #region17 { fill: #31a354; } /* Dark Green */
+.map-container #region18 { fill: #c7e9c0; } /* Pale Green */
+
+.map-container #layer1 [id^="region"]:hover {
+  fill: #FFC107; /* Rich Gold, for a consistent interactive color across regions */
+  stroke: #D32F2F; /* Muscle Red, for the border */
+  stroke-width: 2px; /* Adjust width as needed */
   cursor: pointer;
 }

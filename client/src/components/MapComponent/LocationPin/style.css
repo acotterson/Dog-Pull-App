@@ -1,0 +1,6 @@
+.pin {
+  fill: #D32F2F;
+  stroke: #FFFFFF; /* Or another high-contrast color */
+  stroke-width: 1px; /* Or as needed */
+  filter: drop-shadow(0 0 2px black);
+}

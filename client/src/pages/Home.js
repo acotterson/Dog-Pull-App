@@ -88,6 +88,7 @@ const events = [
     status: "Tentative (T)",
     noviceAllowed: true,
     practiceAllowed: true,
+    
   },
   {
     id: "2",
@@ -138,7 +139,7 @@ const Home = () => {
       </div>
       <div>
         <h1>Interactive Map</h1>
-        <MapComponent />
+        <MapComponent events={events} />
       </div>
     </div>
   );
