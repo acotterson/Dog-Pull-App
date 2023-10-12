@@ -2,6 +2,7 @@
   width: 100%; /* Adjust as per your requirements */
   height: auto;
   border: 1px solid #D32F2F; /* Optional: Just to visualize the SVG boundary */
+  position: relative;
 }
 
 .responsiveSVG {
@@ -34,4 +35,15 @@
   stroke: #D32F2F; /* Muscle Red, for the border */
   stroke-width: 2px; /* Adjust width as needed */
   cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  transform: translate(-50%, -100%);
+  z-index: 100;
 }

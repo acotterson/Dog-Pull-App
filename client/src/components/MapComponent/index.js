@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import Pin from "./LocationPin/index";
 import { getCoordinatesForLocation } from "../../utils/locationCoordinates";
 import "./style.css";
 
 function MapComponent({ events }) {
+  const [tooltip, setTooltip] = useState(null);
+
+  const handleMouseOver = (event) => {
+    setTooltip({
+      display: true,
+      x: event.clientX,
+      y: event.clientY,
+      content: `${event.type}: ${event.date}`,
+    });
+  };
+
+  const handleMouseOut = () => {
+    setTooltip(null);
+  };
+
+  const handleMouseMove = (event) => {
+    if (tooltip) {
+      setTooltip({
+        ...tooltip,
+        x: event.clientX,
+        y: event.clientY,
+      });
+    }
+  };
+
+  const handleClick = (eventUrl) => {
+    window.open(eventUrl, "_blank"); // Opens the link in a new tab. Use '_self' to open in the same tab
+  };
+
   return (
     <div className="map-container">
       <svg
@@ -575,9 +604,28 @@ function MapComponent({ events }) {
         </g>
         {events.map((event) => {
           const coords = getCoordinatesForLocation(event);
-          return <Pin key={event.id} x={coords.x} y={coords.y} event={event} />;
+          return (
+            <Pin
+              key={event.id}
+              x={coords.x}
+              y={coords.y}
+              event={event}
+              onMouseOver={() => handleMouseOver(event)}
+              onMouseOut={handleMouseOut}
+              onMouseMove={handleMouseMove}
+              onClick={() => handleClick(event.url)}
+            />
+          );
         })}
       </svg>
+      {tooltip && (
+        <div
+          className="tooltip"
+          style={{ left: `${tooltip.x}px`, top: `${tooltip.y}px` }}
+        >
+          {tooltip.content}
+        </div>
+      )}
     </div>
   );
 }

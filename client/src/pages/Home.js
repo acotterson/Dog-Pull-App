@@ -16,6 +16,7 @@ const events = [
     status: "Tentative (T)",
     noviceAllowed: true,
     practiceAllowed: true,
+    url: "http://localhost:3000/",
   },
   {
     id: "2",
@@ -28,6 +29,7 @@ const events = [
     status: "Cancelled (C)",
     noviceAllowed: false,
     practiceAllowed: false,
+    url: "http://localhost:3000/",
   },
   {
     id: "1",
@@ -40,6 +42,7 @@ const events = [
     status: "Tentative (T)",
     noviceAllowed: true,
     practiceAllowed: true,
+    url: "http://localhost:3000/",
   },
   {
     id: "2",
@@ -52,6 +55,7 @@ const events = [
     status: "Cancelled (C)",
     noviceAllowed: false,
     practiceAllowed: false,
+    url: "http://localhost:3000/",
   },
   {
     id: "1",
@@ -64,6 +68,7 @@ const events = [
     status: "Tentative (T)",
     noviceAllowed: true,
     practiceAllowed: true,
+    url: "http://localhost:3000/",
   },
   {
     id: "2",
@@ -76,6 +81,7 @@ const events = [
     status: "Cancelled (C)",
     noviceAllowed: false,
     practiceAllowed: false,
+    url: "http://localhost:3000/",
   },
   {
     id: "1",
@@ -88,7 +94,7 @@ const events = [
     status: "Tentative (T)",
     noviceAllowed: true,
     practiceAllowed: true,
-    
+    url: "http://localhost:3000/",
   },
   {
     id: "2",
@@ -101,6 +107,7 @@ const events = [
     status: "Cancelled (C)",
     noviceAllowed: false,
     practiceAllowed: false,
+    url: "http://localhost:3000/",
   },
   {
     id: "1",
@@ -113,6 +120,7 @@ const events = [
     status: "Tentative (T)",
     noviceAllowed: true,
     practiceAllowed: true,
+    url: "http://localhost:3000/",
   },
   {
     id: "2",
@@ -125,6 +133,7 @@ const events = [
     status: "Cancelled (C)",
     noviceAllowed: false,
     practiceAllowed: false,
+    url: "http://localhost:3000/",
   },
 ];
 

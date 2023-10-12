@@ -4,3 +4,7 @@
   stroke-width: 1px; /* Or as needed */
   filter: drop-shadow(0 0 2px black);
 }
+
+.pin:hover {
+  cursor: pointer;
+}
